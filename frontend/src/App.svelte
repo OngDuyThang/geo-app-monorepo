@@ -3,10 +3,8 @@
   import { onMount } from 'svelte';
   import type { AppType } from '../../hono-api/src/index';
  
-  // @ts-ignore
-
   // RPC Client with Hono controllers type safe
-  const client = hc<AppType>(process?.env?.HONO_API_URL || 'http://localhost:8787');
+  const client = hc<AppType>(import.meta?.env?.HONO_API_URL || 'http://localhost:8787');
 
   // Theme State (Default Dark)
   let theme = 'dark';
