@@ -109,3 +109,8 @@ Once the backend is running (locally or deployed), you can visit:
 - **OpenAPI JSON**: `http://localhost:8787/doc`
 
 This documentation is automatically generated based on the Zod schemas defined in `hono-api/src/index.ts`.
+
+## ✨ Demo
+![Demo Dark](static/demo-dark.png)
+
+![Demo Light](static/demo-light.png)
