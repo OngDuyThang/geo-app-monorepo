@@ -1,0 +1,11 @@
+{
+  "name": "geo-app-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "hono-api"
+  ]
+}
