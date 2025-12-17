@@ -1,4 +1,5 @@
 import type { IncomingRequestCfProperties } from "@cloudflare/workers-types";
+import { swaggerUI } from "@hono/swagger-ui";
 import { OpenAPIHono, createRoute, z } from "@hono/zod-openapi";
 import { cors } from "hono/cors";
 
@@ -238,6 +239,18 @@ const routes = app
       "Other Stores"
     )
   );
+
+// --- 6. DOCUMENTATION ---
+
+app.doc("/doc", {
+  openapi: "3.0.0",
+  info: {
+    version: "1.0.0",
+    title: "Store Scanner API",
+  },
+});
+
+app.get("/ui", swaggerUI({ url: "/doc" }));
 
 export default app;
 export type AppType = typeof routes;
