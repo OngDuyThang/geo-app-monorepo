@@ -114,3 +114,5 @@ This documentation is automatically generated based on the Zod schemas defined i
 ![Demo Dark](static/demo-dark.png)
 
 ![Demo Light](static/demo-light.png)
+
+![Cloudflare Dashboard](static/cloudflare-dashboard.png)
